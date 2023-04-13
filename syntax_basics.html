@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPP Basic Syntax</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>CPlusPlus</header>
+        <ul>
+            <li><a class="nav-link" href="Introduction.html" target="_blank">Introduction</a></li>
+            <li><a class="nav-link" href="#syntax_basics">Syntax-Basics</a></li>
+            <li><a class="nav-link" href="variables.html" target=""_blank>Variables</a></li>
+            <li><a class="nav-link" href="datatypes.html" target="_blank">Datatypes</a></li>
+            <li><a class="nav-link" href="opertors.html" target="_blank">Operators</a></li>
+            <li><a class="nav-link" href="strings.html" target="_blank">Strings</a></li>
+            <li><a class="nav-link" href="math.html" target="_blank">Math</a></li>
+            <li><a class="nav-link" href="conditional_stmt.html" target="_blank">Conditional Statements</a></li>
+            <li><a class="nav-link" href="switch.html" target="_blank">Switch</a></li>
+            <li><a class="nav-link" href="control_stmt.html" target="_blank">Control Statement</a></li>
+            <li><a class="nav-link" href="break-continue.html" target="_blank">Break/Continue</a></li>
+            <li><a class="nav-link" href="array.html" target="_blank">Array</a></li>
+            <li><a class="nav-link" href="pointers-references.html" target="_blank">Pointers,References</a></li>
+            <li><a class="nav-link" href="function.html" target="_blank">Function</a></li>
+            <li><a class="nav-link" href="class.html" target="_blank">Class</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="syntax-basics">
+            <header><h1>Basic Syntax in CPlusPlus</h1></header>
+            <article>
+                <p>Let's start with a example</p>
+                <code><h3>Example:</h3>#include < iostream > 
+                    using namespace std;
+
+                    int main() {
+                        cout<<"Hello World";
+                        return 0;
+                    }
+                </code>
+                <h2>Explanation</h2>
+                <p>The above code is a basic template for a CPlusPlus program where</p>
+                <ul>
+                    <li><strong>#include < include ></strong> - is a header file library that lets you do input and output operations</li>
+                    <li><strong>using namespace std</strong> means that we can use names for objects and variables from the standard library.</li>
+                    <li><strong>int main()</strong> - is a function which executes code inside flower brackets i.e., "{ }".</li>
+                    <li><strong>cout (pronounced "see-out")</strong> is an object used together with the insertion operator (<<) to output/print text. In our example it will output "Hello World!".</li>
+                    <li><strong>semi-colon (" ; ")</strong> in every line indicates end of a line of code.</li>
+                    <li><strong>return 0</strong> ends the main function.</li>
+                </ul>
+                <br><hr>
+                <h2>Is using namespace std really necessary?</h2>
+                <p>The using namespace std line can be omitted and replaced with the std keyword, followed by the :: operator for some objects.</p>
+            </article>
+            <br><hr>
+            <article>
+                <h1>Comments in CPlusPlus</h1>
+                <p>Comments can be used to explain C++ code, and to make it more readable.</p>
+                <p>They will not be executed.They are of two types,</p>
+                <ul>
+                    <li>Single-Lined Comment</li>
+                    <li>Multi-Lined Comment</li>
+                </ul>
+                <br><hr>
+                <h2>Single-Lined Comment</h2>
+                <p>Single-line comments start with <strong>two forward slashes (//).</strong></p>
+                <p>Any text between // and the end of the line is ignored by the compiler (will not be executed).</p>
+                <code><h3>Example:</h3>
+                    //Are you new to CPlusPlus.
+                    cout<<"Hey There!";
+                </code>
+                <br><hr>
+                <h2>Multi-Lined Comment</h2>
+                <p>Multi-line comments <strong>start with /* and ends with */.</strong></p>
+                <p>Any text between /* and */ will be ignored by the compiler</p>
+                <code><h3>Example:</h3>
+                    /* Are you new to CPlusPlus!?
+                    Let's make the learning easy!! */
+                    cout<<"Hey There!";
+                </code>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

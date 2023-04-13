@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPP Variables</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>CPlusPlus</header>
+        <ul>
+            <li><a class="nav-link" href="Introduction.html" target="_blank">Introduction</a></li>
+            <li><a class="nav-link" href="syntax_basics.html" target="_blank">Syntax-Basics</a></li>
+            <li><a class="nav-link" href="#variables">Variables</a></li>
+            <li><a class="nav-link" href="datatypes.html" target="_blank">Datatypes</a></li>
+            <li><a class="nav-link" href="opertors.html" target="_blank">Operators</a></li>
+            <li><a class="nav-link" href="strings.html" target="_blank">Strings</a></li>
+            <li><a class="nav-link" href="math.html" target="_blank">Math</a></li>
+            <li><a class="nav-link" href="conditional_stmt.html" target="_blank">Conditional Statements</a></li>
+            <li><a class="nav-link" href="switch.html" target="_blank">Switch</a></li>
+            <li><a class="nav-link" href="control_stmt.html" target="_blank">Control Statement</a></li>
+            <li><a class="nav-link" href="break-continue.html" target="_blank">Break/Continue</a></li>
+            <li><a class="nav-link" href="array.html" target="_blank">Array</a></li>
+            <li><a class="nav-link" href="pointers-references.html" target="_blank">Pointers,References</a></li>
+            <li><a class="nav-link" href="function.html" target="_blank">Function</a></li>
+            <li><a class="nav-link" href="class.html" target="_blank">Class</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="variables">
+            <header><h1>Variables in CPlusPlus</h1></header>
+            <p>Let's learn variables now.</p>
+            <p>Variables store <strong>data values.</strong></p>
+            <p>In C++, there are different types of variables (defined with different keywords), for example:</p>
+            <ul>
+                <li><strong>int</strong> - stores integers (whole numbers), without decimals, such as 128 or -228</li>
+                <li><strong>double</strong> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                <li><strong>char</strong> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+                <li><strong>string</strong> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+                <li><strong>bool</strong> - stores values with two states: true or false</li>
+            </ul>
+            <hr>
+            <h2>Declaring Variables</h2>
+            <code><h3>Syntax:</h3>
+                datatype variable_name = value;
+                //int number = 10;
+            </code>
+            <p>We shall further know about datatypes in further chapters. Stay patient.</p>
+            <hr>
+            <h2>Common Declarations</h2>
+            <code><h3>Example:</h3>
+                int myNum = 5;               // Integer (whole number without decimals)
+                double myFloatNum = 5.99;    // Floating point number (with decimals)
+                char myLetter = 'D';         // Character
+                string myText = "Hello";     // String (text)
+                bool myBoolean = true;       // Boolean (true or false)
+            </code>
+            <p>Let's move on...</p>
+            <hr><br>
+            <h2>Naming Variables</h2>
+            <p>The general rules for naming variables are:</p>
+            <ul>
+                <li>Names can contain letters, digits and underscores</li>
+                <li>Names must begin with a letter or an underscore (_)</li>
+                <li>Names are case sensitive (myVar and myvar are different variables)</li>
+                <li>Names cannot contain whitespaces or special characters like !, #, %, etc.</li>
+                <li>Reserved words (like C++ keywords, such as int) cannot be used as names</li>
+            </ul>
+            <hr><br>
+            <h2>Constants</h2>
+            <p>When you do not want others to change existing variable values, use the const keyword (this will declare the variable as "constant", which means unchangeable and read-only)</p>
+            <code>Syntax:
+                const datatype variable_name = value;
+                // const int number = 20;
+            </code>
+        </section>
+    </main>
+</body>
+</html>
